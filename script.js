@@ -45,11 +45,27 @@ buttonSetGridWidth.addEventListener("click", () => {
     const drawingArea = document.querySelector(".container");
     drawingArea.innerHTML = "";
 
-    const gridWidth = prompt("Set how many squares in a row of grid you want: ");
 
+    let gridWidth = prompt("Set how many squares in a row of grid you want: ");
+
+    /* if (gridWidth > 100) {
+        gridWidth = prompt("Set how many squares in a row of grid you want (number can be max 100)");
+    } else {
+        makeGrid(gridWidth, "grid_square", ".container");
+
+        sketchingOnDiv();
+    } */
+
+    while (gridWidth > 100) {
+        gridWidth = prompt("Set how many squares in a row of grid you want (number can be max 100)");
+    }
+    
     makeGrid(gridWidth, "grid_square", ".container");
-
+    
     sketchingOnDiv();
+    
+
+    
 })
 
 /* backup for sketching function */
