@@ -17,6 +17,23 @@ function sketchingOnDiv() {
 
     divsToTrack.forEach((div) => {
         div.addEventListener("mousemove", (e) => {
+
+
+            /* skrypt zmieniający kolor diva, na który najedzie myszka */
+            e.target.style.background = "black"; 
+        })
+    })
+}
+
+sketchingOnDiv();
+
+
+/* backup for sketching function */
+/* function sketchingOnDiv() {
+    const divsToTrack = document.querySelectorAll(".grid_square");
+
+    divsToTrack.forEach((div) => {
+        div.addEventListener("mousemove", (e) => {
             let help = document.querySelector(".support");
 
             help.textContent = `
@@ -24,6 +41,4 @@ function sketchingOnDiv() {
             Client Y: ${e.clientY}`;
         })
     })
-}
-
-sketchingOnDiv();
+} */
