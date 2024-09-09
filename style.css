@@ -4,18 +4,26 @@
     box-sizing: border-box;
 }
 
-.container {
+.body {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    padding: 40px;
+    display: flex;
+    justify-content: center;
     flex-wrap: wrap;
-    
+    background-color: bisque;
 }
 
 .grid_square {
     margin: 1px;
     background-color: rgb(128, 255, 0);
-    width: 100px;
-    height: 100px;
-    position: relative;
+    /* width: 100px;
+    height: 100px; */
 }
 
 .grid_square:hover {
@@ -23,8 +31,25 @@
     transition: 500ms;
 }
 
+.button_wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.button_wrapper > button {
+    border: none;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 8px;
+    background-color: rgb(0, 204, 204);
+}
 
+.button_wrapper > button:hover {
+    background-color: rgb(0, 185, 185);
+    box-shadow: 0 1px 4px 0 rgb(0, 142, 142);
+    transition: 200ms;
+}
 
 /* to będzie do usunięcia na koniec  */
 .drawing {

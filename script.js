@@ -2,9 +2,15 @@ function makeGrid(numberOfSquares, classToAdd, parentToAppend) {
     for (i = 0; i < numberOfSquares; i++) {
         const parent = document.querySelector(parentToAppend);
 
+        let widthOfParent = parent.offsetWidth; 
+
+        let widthOfDiv = widthOfParent /numberOfSquares;
+
         const div = document.createElement("div");
         
         div.classList.add(classToAdd);
+
+        div.style.cssText = `width: ${widthOfDiv}px; height: ${widthOfDiv}px;`;
 
         parent.appendChild(div);
     }
@@ -27,6 +33,16 @@ function sketchingOnDiv() {
 
 sketchingOnDiv();
 
+function getGridWidth() {
+    const gridWidth = prompt("Set how many squares in a row of grid you want: ");
+    return gridWidth;
+}
+
+const buttonSetGridWidth = document.querySelector("button");
+
+buttonSetGridWidth.addEventListener("click", () => {
+    getGridWidth();
+})
 
 /* backup for sketching function */
 /* function sketchingOnDiv() {
