@@ -13,24 +13,17 @@ function makeGrid(numberOfSquares, classToAdd, parentToAppend) {
 makeGrid(16, "grid_square", ".container");
 
 function sketchingOnDiv() {
-    const divToTrack = document.querySelector(".grid_square");
+    const divsToTrack = document.querySelectorAll(".grid_square");
 
-    divToTrack.addEventListener('mousemove', (e) => {
-        
-        let help = document.querySelector(".support");
+    divsToTrack.forEach((div) => {
+        div.addEventListener("mousemove", (e) => {
+            let help = document.querySelector(".support");
 
-        help.textContent = `
-        Client X: ${e.clientX}
-        Client Y: ${e.clientY}`;
-
-
-        
-        /* let pixel = document.createElement("div"); 
-
-        pixel.classList.add(classOfTrack);
-
-        divToTrack.appendChild(pixel); */
-    });
+            help.textContent = `
+            Client X: ${e.clientX}
+            Client Y: ${e.clientY}`;
+        })
+    })
 }
 
 sketchingOnDiv();
