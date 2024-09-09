@@ -14,9 +14,25 @@
     background-color: rgb(128, 255, 0);
     width: 100px;
     height: 100px;
+    position: relative;
 }
 
 .grid_square:hover {
     background-color: rgb(100, 200, 0);
     transition: 500ms;
+}
+
+.drawing {
+    width: 10px;
+    height: 10px;
+    background-color: black;
+    position: absolute;
+}
+
+.support {
+    margin-top: 10px;
+    background-color: aquamarine;
+    width: 200px;
+    height: 50px;
+    color: black;
 }
