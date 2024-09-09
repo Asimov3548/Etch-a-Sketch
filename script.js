@@ -4,7 +4,7 @@ function makeGrid(numberOfSquares, classToAdd, parentToAppend) {
 
         let widthOfParent = parent.offsetWidth; 
 
-        let widthOfDiv = (widthOfParent - 120)/numberOfSquares;
+        let widthOfDiv = (widthOfParent - 40)/numberOfSquares;
 
         const div = document.createElement("div");
         
@@ -16,7 +16,7 @@ function makeGrid(numberOfSquares, classToAdd, parentToAppend) {
     }
 }
 
-makeGrid(100, "grid_square", ".container");
+makeGrid(20, "grid_square", ".container");
 
 function sketchingOnDiv() {
     const divsToTrack = document.querySelectorAll(".grid_square");
