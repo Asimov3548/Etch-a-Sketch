@@ -11,7 +11,12 @@
 
 .grid_square {
     margin: 1px;
-    background-color: chartreuse;
+    background-color: rgb(128, 255, 0);
     width: 100px;
     height: 100px;
+}
+
+.grid_square:hover {
+    background-color: rgb(100, 200, 0);
+    transition: 500ms;
 }
