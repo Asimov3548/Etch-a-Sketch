@@ -16,7 +16,7 @@ function makeGrid(numberOfSquares, classToAdd, parentToAppend) {
     }
 }
 
-makeGrid(20, "grid_square", ".container");
+/* makeGrid(20, "grid_square", ".container"); */
 
 function sketchingOnDiv() {
     const divsToTrack = document.querySelectorAll(".grid_square");
@@ -31,7 +31,7 @@ function sketchingOnDiv() {
     })
 }
 
-sketchingOnDiv();
+
 
 function getGridWidth() {
     const gridWidth = prompt("Set how many squares in a row of grid you want: ");
@@ -41,7 +41,15 @@ function getGridWidth() {
 const buttonSetGridWidth = document.querySelector("button");
 
 buttonSetGridWidth.addEventListener("click", () => {
-    getGridWidth();
+    /* getGridWidth(); */
+    const drawingArea = document.querySelector(".container");
+    drawingArea.innerHTML = "";
+
+    const gridWidth = prompt("Set how many squares in a row of grid you want: ");
+
+    makeGrid(gridWidth, "grid_square", ".container");
+
+    sketchingOnDiv();
 })
 
 /* backup for sketching function */
