@@ -23,13 +23,17 @@
     transition: 500ms;
 }
 
+
+
+
+/* to będzie do usunięcia na koniec  */
 .drawing {
     width: 10px;
     height: 10px;
     background-color: black;
     position: absolute;
 }
-
+/* to też będzie do usunięcia na koniec  */
 .support {
     margin-top: 10px;
     background-color: aquamarine;
