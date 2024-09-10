@@ -10,7 +10,7 @@ function makeGrid(numberOfSquares, classToAdd, parentToAppend) {
         
         div.classList.add(classToAdd);
 
-        div.style.cssText = `width: ${widthOfDiv}px; height: ${widthOfDiv}px;`;
+        div.style.cssText = `width: ${widthOfDiv}px; height: ${widthOfDiv}px;backgroundcolor`;
 
         parent.appendChild(div);
     }
@@ -23,10 +23,13 @@ function sketchingOnDiv() {
 
     divsToTrack.forEach((div) => {
         div.addEventListener("mousemove", (e) => {
-
+            let color = `rgb(${Math.random() * 255},${Math.random() * 255},${Math.random() * 255})`
 
             /* skrypt zmieniający kolor diva, na który najedzie myszka */
-            e.target.style.background = "black"; 
+            e.target.style.background = color;
+             
+
+            /* e.target.style.background = 'rgb(255,255,255)'; */ 
         })
     })
 }

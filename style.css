@@ -16,12 +16,12 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    background-color: bisque;
+    background-color: rgb(183, 255, 255);
 }
 
 .grid_square {
-    border: 1px solid black;
-    background-color: rgb(128, 255, 0);
+    border: 1px solid gray;
+    /* background-color: rgb(128, 255, 0); */
     
     /* width: 100px;
     height: 100px; */
