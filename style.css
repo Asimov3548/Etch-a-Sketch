@@ -23,15 +23,6 @@ body {
 
 .grid_square {
     border: 1px solid gray;
-    /* background-color: rgb(128, 255, 0); */
-    
-    /* width: 100px;
-    height: 100px; */
-}
-
-.grid_square:hover {
-    background-color: rgb(100, 200, 0);
-    transition: 500ms;
 }
 
 .button_wrapper {
@@ -52,20 +43,4 @@ body {
     background-color: rgb(0, 185, 185);
     box-shadow: 0 1px 4px 0 rgb(0, 142, 142);
     transition: 200ms;
-}
-
-/* to będzie do usunięcia na koniec  */
-.drawing {
-    width: 10px;
-    height: 10px;
-    background-color: black;
-    position: absolute;
-}
-/* to też będzie do usunięcia na koniec  */
-.support {
-    margin-top: 10px;
-    background-color: aquamarine;
-    width: 200px;
-    height: 50px;
-    color: black;
 }
